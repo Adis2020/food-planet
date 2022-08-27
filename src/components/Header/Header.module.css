@@ -3,9 +3,7 @@
 header {
     display: flex;
     align-items: center;
-    margin-top: 24px;
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: center;
 }
 
 .logo {
