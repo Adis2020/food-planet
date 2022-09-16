@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-right: 80px;
+}
+
+.newsText {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+
+    color: #254F4C;
+}
+
+.pizza {
+    width: 72px;
+    margin-left: 164px;
+
+    font-family: "Roboto", sans-serif;
+
+    color: #1D3130;
+}
+
+.text {
+    width: 72px;
+    margin-left: 16px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: #1D3130;
+}
+
+.textBurger {
+    width: 72px;
+    margin-left: 16px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: #FF583E;
+}

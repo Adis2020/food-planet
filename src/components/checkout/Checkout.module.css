@@ -1,0 +1,133 @@
+.checkout {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+.checkout a {
+    font-weight: 300;
+}
+
+.formData {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    width: 1070px;
+}
+
+.formData input {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #adacac;
+    border-radius: 4px;
+}
+
+.formData input::placeholder {
+    color: #adacac;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    gap: 20px;
+}
+
+.quality {
+    margin-left: 180px;
+}
+
+.names {
+    display: flex;
+    gap: 80px;
+    color: #adacac;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.address {
+    margin-top: 20px;
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.address label {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 4px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #adacac;
+}
+
+.address select {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 4px;
+    width: 422px;
+    height: 44px;
+    border: 1px solid #adacac;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 4px;
+    width: 398px;
+    height: 40px;
+    border: 1px solid #adacac;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.elem img{
+    height: 90px;
+    width: 120px;
+}
+
+.elem div {
+    width: 80px;
+
+}
+
+.elem input {
+    width: 80px;
+    text-align: center;
+}
+
+.pay {
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 7px;
+}
+
+.pay label {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 4px;
+    width: 400px;
+    flex-wrap: wrap;
+    height: 40px;
+    border: 1px solid #adacac;
+}

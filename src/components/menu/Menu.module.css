@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 49px;
+    margin-right: 80px;
+}
+
+.menuText {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+
+    color: #254F4C;
+}
+
+.pizza {
+    width: 72px;
+    margin-left: 164px;
+
+    font-family: "Roboto", sans-serif;
+
+    color: #1D3130;
+}
+
+.text {
+    width: 72px;
+    margin-left: 16px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: #1D3130;
+}
+
+.textBurger {
+    width: 72px;
+    margin-left: 16px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: #FF583E;
+}
+
+.sort {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #1D3130;
+}
+
+.sortSelect {
+    width: 160px;
+    height: 40px;
+    margin-left: 24px;
+
+    border: 1px solid #C4C4C4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    color: #3A403F;
+}
+
+.sortMove {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 737px;
+}

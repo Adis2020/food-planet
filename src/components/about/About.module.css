@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: center;
+    margin-left: -820px;
+    margin-top: 42px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+
+    color: #254F4C;
+}
+
+.aboutData {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.data {
+    width: 256px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstName {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #254F4C;
+}
+
+.desc {
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #1D3130;
+}

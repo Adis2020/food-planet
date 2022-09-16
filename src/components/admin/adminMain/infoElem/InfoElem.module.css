@@ -1,0 +1,31 @@
+.box {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 258px;
+    height: 134px;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+}
+
+.box:hover {
+    border: 1px solid #3751FF;
+    color: #3751FF;
+}
+
+.box div {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.boxes {
+    margin-top: 124px;
+    position: absolute;
+    margin-left: 285px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}

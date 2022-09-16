@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: center;
+    margin-left: -980px;
+    margin-top: 56px;
+}
+
+.pen {
+    position: absolute;
+    margin-top: -140px;
+    margin-left: -112px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+
+    color: #254F4C;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.data {
+    width: 248px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1D3130;
+    border-radius: 40px;
+}
+
+.firstName {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #3B7976;
+}
+
+.desc {
+    width: 216px;
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #061817;
+}
+
+.date {
+    margin-top: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #3B7976;
+}

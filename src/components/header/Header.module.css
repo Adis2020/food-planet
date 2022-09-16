@@ -1,0 +1,98 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.logo {
+    display: flex;
+}
+
+.moveText {
+    margin-left: 8px;
+}
+
+.logoFirstText {
+    display: inline;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #254F4C;
+}
+
+.logoLastText {
+    height: 16px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #1D3130;
+}
+
+.main {
+    margin-left: 129px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FF583E;
+}
+
+.menu {
+    margin-left: 60px;
+
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1D3130;
+}
+
+.text {
+    margin-left: 60px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #1D3130;
+}
+
+.textPhone {
+    margin-left: 60px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #1D3130;
+}
+
+.textPhone img {
+    margin-right: 8px;
+}
+
+.basket {
+    margin-left: 60px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #FF583E;
+}
+
+.basket img {
+    margin-right: 8px;
+}
+
+.moveHeader {
+    flex: 0 0 auto;
+}

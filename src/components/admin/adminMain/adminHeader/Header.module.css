@@ -1,0 +1,38 @@
+.main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #252733;
+}
+
+.header {
+    display: flex;
+    height: 44px;
+    margin-left: 15px;
+    margin-top: 16px;
+}
+
+.img {
+    width: 17px;
+    height: 17px;
+}
+
+.imgSearch {
+    width: 17px;
+    height: 17px;
+    margin-left: 771px;
+}
+
+.moveMain {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.line {
+    border: 1px solid #DFE0EB;
+    height: 32px;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+}

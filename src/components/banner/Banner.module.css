@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-
 .move {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
 }
 
 .mainText {
     width: 403px;
     margin-top: 144px;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 36px;
     color: #254F4C;
@@ -21,7 +19,7 @@
     width: 416px;
     margin-top: 16px;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #254F4C;
@@ -35,7 +33,7 @@
     height: 49px;
     margin-top: 16px;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
     border: none;

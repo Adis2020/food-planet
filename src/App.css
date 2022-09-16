@@ -1,5 +1,30 @@
 body {
-    padding-top: 24px;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.mainAdmin {
+    display: flex;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+}
+
+.activeAdminPanel {
+    background: #46484f;
+}
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color: #666;
 }
