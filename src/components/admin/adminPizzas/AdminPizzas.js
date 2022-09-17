@@ -1,12 +1,10 @@
 import React from 'react';
 import s from './AdminPizzas.module.css';
 import burger from '../../data/images/pizza1.png';
-import AdminPanel from "../adminMain/adminPanel/AdminPanel";
 
 const AdminPizzas = () => {
     return (
         <div className={s.elem}>
-            <AdminPanel/>
             <div className={s.burgers}>
                 <div className={s.burger}>
                     <img src={burger} alt="Бургер"/>

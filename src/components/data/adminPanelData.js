@@ -10,37 +10,37 @@ const data = [
         id: 1,
         img: main,
         text: 'Главная',
-        href: 'panel'
+        href: 'main'
     },
     {
         id: 2,
         img: orders,
         text: 'Заказы',
-        href: 'panel'
+        href: 'main'
     },
     {
         id: 3,
         img: menu,
         text: 'Меню',
-        href: 'panel'
+        href: 'main'
     },
     {
         id: 4,
         img: contact,
         text: 'Контакты',
-        href: 'panel'
+        href: 'main'
     },
     {
         id: 5,
         img: reviews,
         text: 'Отзывы',
-        href: 'panel'
+        href: 'main'
     },
     {
         id: 6,
         img: employees,
         text: 'Сотрудники',
-        href: 'panel'
+        href: 'main'
     }
 ]
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import s from './Header.module.css';
-import search from '../../../data/icons/search.svg';
-import news from '../../../data/icons/new.svg';
+import s from './AdminHeader.module.css';
+import search from '../.././data/icons/search.svg';
+import news from '../.././data/icons/new.svg';
 
-const Header = () => {
+const AdminHeader = () => {
     return (
         <div className={s.header}>
             <div className={s.moveMain}>
@@ -17,4 +17,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default AdminHeader;

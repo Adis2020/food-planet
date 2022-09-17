@@ -1,10 +1,14 @@
 import React from 'react';
-import AdminPanel from "./adminMain/adminPanel/AdminPanel";
+import {Outlet} from 'react-router-dom';
+import AdminPanel from "./adminPanel/AdminPanel";
+import AdminHeader from "./adminHeader/AdminHeader";
 
 const Admin = () => {
     return (
-        <div>
+        <div className="mainAdmin">
             <AdminPanel/>
+            <AdminHeader/>
+            <Outlet/>
         </div>
     );
 };

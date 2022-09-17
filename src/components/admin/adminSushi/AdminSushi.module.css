@@ -19,6 +19,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.elem img {
+    height: 230px;
+}
+
 .title {
     font-size: 30px;
     font-weight: 700;
