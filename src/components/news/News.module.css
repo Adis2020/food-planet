@@ -4,6 +4,7 @@
     justify-content: center;
     margin-top: 90px;
     margin-right: 80px;
+    gap: 10px;
 }
 
 .newsText {
@@ -16,8 +17,9 @@
 
 .pizza {
     width: 72px;
-    margin-left: 164px;
+    margin-left: 144px;
 
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
 
     color: #1D3130;
@@ -27,6 +29,7 @@
     width: 72px;
     margin-left: 16px;
 
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 
@@ -37,8 +40,121 @@
     width: 72px;
     margin-left: 16px;
 
+    font-size: 17px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 
     color: #FF583E;
+}
+
+.burgers {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.burger {
+    width: 264px;
+    height: 348px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #2B4241;
+    border-radius: 40px;
+}
+
+.burger img{
+    max-width: 200px;
+    height: 142px;
+    margin-top: -45px;
+}
+
+.mainText {
+    height: 24px;
+    margin-top: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+.desc {
+    width: 231px;
+    margin-top: 16px;
+
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #FFFFFF;
+}
+
+.price {
+    margin-top: 8px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+.clicker {
+    height: 13px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.minus {
+    margin-top: -8px;
+
+    font-size: 40px;
+    color: #FF583E;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 40px;
+    color: #FF583E;
+    cursor: pointer;
+}
+
+.number {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 49px;
+    margin-top: 19px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+
+    color: #FFFFFF;
+    background-color: #FF583E;
+    border-radius: 40px;
+}
+
+.button:hover {
+    background-color: #ff371b;
 }

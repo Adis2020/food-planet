@@ -69,12 +69,13 @@
 
 .minus {
     margin-top: -8px;
-
+    cursor: pointer;
     font-size: 40px;
     color: #FF583E;
 }
 
 .plus {
+    cursor: pointer;
     font-size: 40px;
     color: #FF583E;
 }

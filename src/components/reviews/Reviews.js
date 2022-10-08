@@ -1,12 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import style from "./Reviews.module.css";
-import reviewsData from ".././data/reviewsData";
 import pen from ".././data/images/pen.svg";
+import api from "../data/api";
 
 const Reviews = () => {
-    const reviewsElement = reviewsData.map((item, index) => {
+    let [reviews, setReviews] = useState([]);
+    const getData = () => {
+        fetch(api.reviews)
+            .then(response => response.json())
+            .then(data => setReviews(data))
+    }
+    useEffect(() => {
+        getData();
+    }, [])
+    const reviewsElement = reviews.map(item => {
         return (
-            <div className={style.data} key={index}>
+            <div className={style.data} key={item.id}>
                 <img className={style.pen} src={pen}/>
                 <img src={item.avatar}/>
                 <h3 className={style.firstName}>{item.name}</h3>

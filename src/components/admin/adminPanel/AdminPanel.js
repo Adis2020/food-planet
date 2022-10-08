@@ -23,9 +23,11 @@ const AdminPanel = () => {
     return (
         <div>
             <div className={s.panel}>
-                <div className={s.logo}>
-                    <img src={logo} alt="logo"/>
-                    <h3>FOOD PLANET</h3>
+                <div className={s.moveLogo}>
+                    <Link to="/" className={s.logo}>
+                        <img src={logo} alt="logo"/>
+                        <h3>FOOD PLANET</h3>
+                    </Link>
                 </div>
                 <AdminPanelElem/>
             </div>

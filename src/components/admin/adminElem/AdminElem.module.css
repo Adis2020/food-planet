@@ -20,7 +20,8 @@
 }
 
 .elem img {
-    height: 230px;
+    max-height: 190px;
+    max-width: 200px;
 }
 
 .title {

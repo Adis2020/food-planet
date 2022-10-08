@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './AdminMain.module.css';
 import data from "../../data/adminMainData";
-import {Link, Outlet} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const AdminMainElem = () => {
     return data.map((item) => {

@@ -23,7 +23,7 @@ const data = [
         img: delivery,
         title: "Доставка",
         desc: "Мы быстро доставляем вашу еду по указанному адресу"
-    },
+    }
 ]
 
 export default data;

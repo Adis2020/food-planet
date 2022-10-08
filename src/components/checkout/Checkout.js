@@ -3,15 +3,15 @@ import s from "./Checkout.module.css";
 
 const Checkout = () => {
     let elem;
-    if (sessionStorage.basket){
-        let getData = sessionStorage.getItem("basket");
+    if (localStorage.basket){
+        let getData = localStorage.getItem('basket');
         let data = JSON.parse(getData);
         elem = data.map((item, index) => {
             return (
                 <div className={s.elem} key={index}>
                     <img src={item.img} alt=""/>
                     <div>{item.title}</div>
-                    <input defaultValue={item.number}/>
+                    <input defaultValue={item.count}/>
                     <div>{item.price}</div>
                 </div>
             )

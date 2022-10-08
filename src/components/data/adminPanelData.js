@@ -34,7 +34,7 @@ const data = [
         id: 5,
         img: reviews,
         text: 'Отзывы',
-        href: 'main'
+        href: 'reviews'
     },
     {
         id: 6,

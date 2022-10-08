@@ -4,47 +4,45 @@ import {NavLink} from "react-router-dom";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 
-let data = [];
-
 const BasketElem = (props) => {
-    let img = props.img;
-    let title = props.title;
-    let price = props.price;
-    let number = props.number;
-    const dataBurger = {
-        img: img,
-        title: title,
-        price: price,
-        number: number,
-    }
-    data.push(dataBurger)
-    sessionStorage.setItem("basket", JSON.stringify(data));
     return (
         <div className={style.elem}>
             <img src={props.img} alt=""/>
             <div>{props.title}</div>
-            <input defaultValue={props.number}/>
+            <input defaultValue={props.count}/>
             <div>{props.price}</div>
         </div>
     )
 }
 
 const Basket = () => {
-    const elems = () => {
-        if (sessionStorage.burger) {
-            const burgerElem = JSON.parse(sessionStorage.getItem("burger"));
-            return burgerElem.map((item, index) => {
+    let data = [];
+    const getElem = () => {
+        if (localStorage.cart) {
+            const burgerElem = JSON.parse(localStorage.getItem('cart'));
+            return burgerElem.map(item => {
+                data.push({
+                    img: item.img,
+                    title: item.title,
+                    count: item.count,
+                    price: item.price
+                })
                 return (
                     <BasketElem
-                        key={index}
+                        id={item.id}
+                        key={item.id}
                         img={item.img}
                         title={item.title}
-                        number={item.number}
+                        count={item.count}
                         price={item.price}
                     />
                 )
             })
         }
+    }
+    const setElem = () => {
+        let result = JSON.stringify(data)
+        localStorage.setItem('basket', result);
     }
     return (
         <>
@@ -57,10 +55,10 @@ const Basket = () => {
                 <h3>Цена</h3>
             </div>
             <div className={style.elements}>
-                {elems()}
+                {getElem()}
                 <div className={style.buttonMove}>
                     <NavLink to={"/checkout"}>
-                        <button className={style.button}>Оформить заказ</button>
+                        <button className={style.button} onClick={setElem}>Оформить заказ</button>
                     </NavLink>
                 </div>
             </div>

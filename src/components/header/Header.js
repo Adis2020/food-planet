@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
 import style from "./Header.module.css";
 import logo from "../data/images/logo.svg";
@@ -6,6 +6,19 @@ import phone from "../data/images/phone.svg";
 import basket from "../data/images/basket.svg";
 
 const Header = () => {
+    const [lenght, setLenght] = useState(0);
+    useEffect(() => {
+        if (localStorage.cart) {
+            const data = JSON.parse(localStorage.cart);
+            const countArray = data.map(item => {
+                return item.count;
+            })
+            const count = countArray.reduce((previousValue, currentValue) => {
+                return previousValue + currentValue;
+            })
+            setLenght(count);
+        }
+    })
     return (
         <div className={style.moveHeader}>
             <header className={style.header}>
@@ -16,7 +29,7 @@ const Header = () => {
                         <div className={style.logoLastText}>Планета вкусной еды</div>
                     </div>
                 </div>
-                <div className={style.main}>Главная</div>
+                <NavLink to="/" className={style.main}>Главная</NavLink>
                 <select className={style.menu}>
                     <option>Меню</option>
                 </select>
@@ -26,9 +39,9 @@ const Header = () => {
                     <img src={phone} alt="phone"/>
                     +996500405988
                 </div>
-                <NavLink to={"/basket"} className={style.basket}>
+                <NavLink to="/basket" className={style.basket}>
                     <img src={basket} alt="phone"/>
-                    1
+                    {lenght}
                 </NavLink>
             </header>
         </div>

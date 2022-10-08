@@ -1,18 +1,14 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import style from "./App.css";
-import Main from "./components/main/Main";
-import Basket from "./components/basket/Basket";
-import Checkout from "./components/checkout/Checkout";
-import Admin from "./components/admin/Admin";
-import AdminMain from "./components/admin/adminMain/AdminMain";
-import AdminBurger from "./components/admin/adminBurgers/AdminBurger";
-import AdminPizzas from "./components/admin/adminPizzas/AdminPizzas";
-import AdminSushi from "./components/admin/adminSushi/AdminSushi";
-import AdminRolls from "./components/admin/adminRolls/AdminRolls";
-import AdminDrinks from "./components/admin/adminDrinks/AdminDrinks";
-import AdminDeserts from "./components/admin/adminDeserts/AdminDeserts";
-import AdminSalats from "./components/admin/adminSalats/AdminSalats";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import style from './App.css';
+import Main from './components/main/Main';
+import Basket from './components/basket/Basket';
+import Checkout from './components/checkout/Checkout';
+import Admin from './components/admin/Admin';
+import AdminMain from './components/admin/adminMain/AdminMain';
+import AdminElem from './components/admin/adminElem/AdminElem';
+import NotFound from './components/notFound/NotFound';
+import AdminReviews from "./components/admin/adminReviews/AdminReviews";
 
 const App = () => {
     return (
@@ -23,14 +19,10 @@ const App = () => {
                 <Route path="/checkout" element={<Checkout/>}/>
                 <Route path="/admin" element={<Admin/>}>
                     <Route path="main" element={<AdminMain/>}/>
-                    <Route path="burgers" element={<AdminBurger/>}/>
-                    <Route path="pizzas" element={<AdminPizzas/>}/>
-                    <Route path="sushis" element={<AdminSushi/>}/>
-                    <Route path="rolls" element={<AdminRolls/>}/>
-                    <Route path="drinks" element={<AdminDrinks/>}/>
-                    <Route path="deserts" element={<AdminDeserts/>}/>
-                    <Route path="salats" element={<AdminSalats/>}/>
+                    <Route path="reviews" element={<AdminReviews/>}/>
+                    <Route path=":element_name" element={<AdminElem/>}/>
                 </Route>
+                <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
     );

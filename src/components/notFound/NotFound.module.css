@@ -1,0 +1,18 @@
+.notFound {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notFound h1 {
+    font-size: 50px;
+}
+
+.link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.link:hover {
+    color: #2B4241;
+}

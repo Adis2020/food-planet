@@ -9,7 +9,7 @@ const data = [
         id: 2,
         title: 'Бургер',
         count: 16,
-        href: '../burgers'
+        href: '../elements'
     },
     {
         id: 3,
