@@ -7,6 +7,7 @@ const api = {
     reviews: 'http://localhost:3001/reviews',
     desserts: 'http://localhost:3001/desserts',
     beverages: 'http://localhost:3001/beverages',
+    productTabs: 'http://localhost:3001/productTabs',
     salads: 'http://localhost:3001/salads'
 }
 

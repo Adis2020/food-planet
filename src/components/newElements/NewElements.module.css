@@ -1,28 +1,18 @@
-.pizzas {
+.elem {
+    width: 264px;
+    height: 348px;
+    margin-top: 30px;
     display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    gap: 32px;
-    flex-wrap: wrap;
-}
-
-.pizza {
-    display: flex;
-    margin-top: 94px;
-
     flex-direction: column;
     align-items: center;
 
-
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2B4241;
     border-radius: 40px;
 }
 
-.pizza img{
-    width: 200px;
-    height: 142px;
+.elem img{
+    max-width: 200px;
+    max-height: 142px;
     margin-top: -45px;
 }
 
@@ -34,7 +24,7 @@
     font-weight: 700;
     font-size: 20px;
 
-    color: #254F4C;
+    color: #FFFFFF;
 }
 
 .desc {
@@ -46,7 +36,7 @@
     font-weight: 400;
     font-size: 14px;
 
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .price {
@@ -56,7 +46,7 @@
     font-weight: 700;
     font-size: 20px;
 
-    color: #254F4C;
+    color: #FFFFFF;
 }
 
 .clicker {
@@ -69,22 +59,23 @@
 
 .minus {
     margin-top: -8px;
-    cursor: pointer;
+
     font-size: 40px;
     color: #FF583E;
+    cursor: pointer;
 }
 
 .plus {
-    cursor: pointer;
     font-size: 40px;
     color: #FF583E;
+    cursor: pointer;
 }
 
 .number {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    color: #254F4C;
+    color: #FFFFFF;
 }
 
 .button {
@@ -101,38 +92,10 @@
     border: none;
 
     color: #FFFFFF;
-    background-color: #254F4C;
+    background-color: #FF583E;
     border-radius: 40px;
 }
 
 .button:hover {
     background-color: #ff371b;
-}
-
-.buttonMore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 49px;
-    margin-top: 19px;
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-
-    color: #FF583E;
-    border: 1px solid #FF583E;
-    border-radius: 40px;
-}
-
-.buttonMore:hover {
-    background-color: #ff371b;
-    color: white;
-}
-
-.moveButtonMore {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
 }

@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import style from "./Basket.module.css";
 import {NavLink} from "react-router-dom";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 
 const BasketElem = (props) => {
+    const [price, setPrice] = useState(parseInt(props.price.replace(/\D+/g,""))); //Берём только цифры;
+    const [count, setCount] = useState(props.count);
+    useEffect(() => {
+        setPrice(price * count);
+    }, [])
     return (
         <div className={style.elem}>
             <img src={props.img} alt=""/>
             <div>{props.title}</div>
-            <input defaultValue={props.count}/>
-            <div>{props.price}</div>
+            <input defaultValue={count}/>
+            <div>{price}</div>
         </div>
     )
 }

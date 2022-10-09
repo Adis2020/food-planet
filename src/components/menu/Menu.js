@@ -1,45 +1,7 @@
-import React, {useState} from 'react';
-import style from "./Menu.module.css";
-import api from "../data/api";
-import productManager from "../../manager/product.manager";
-
-const Element = (props) => {
-    let [quality, setQuality] = useState(1);
-    if (quality < 1) {
-        setQuality(1);
-    }
-    const addProducts = () => {
-        const obj = {count: quality, ...props}
-        const products = productManager.getProduct();
-        let data;
-        if (products) {
-            const checkResult = productManager.checkProduct(props.id, products);
-            if (checkResult === -1) {
-                products.push(obj);
-            } else {
-                products[checkResult].count = ++products[checkResult].count;
-            }
-            data = products;
-        } else {
-            data = [obj];
-        }
-        productManager.setProduct(JSON.stringify(data));
-    }
-    return (
-        <div className={style.elem}>
-            <img src={props.img}/>
-            <div className={style.mainText}>{props.title}</div>
-            <div className={style.desc}>{props.desc}</div>
-            <div className={style.price}>{props.price}</div>
-            <div className={style.clicker}>
-                <button className={style.minus} onClick={() => setQuality(quality - 1)}>-</button>
-                <div className={style.number}>{quality}</div>
-                <button className={style.plus} onClick={() => setQuality(quality + 1)}>+</button>
-            </div>
-            <button className={style.button} onClick={addProducts}>В КОРЗИНУ</button>
-        </div>
-    )
-}
+import React, {useEffect, useState} from 'react';
+import s from './Menu.module.css';
+import api from '../data/api';
+import MenuElements from '../menuElements/MenuElements';
 
 const Menu = () => {
     let [elem, setElem] = useState([]);
@@ -49,11 +11,18 @@ const Menu = () => {
             .then(response => response.json())
             .then(data => setElem(data))
     }
+    useEffect(() => {
+        if (elem.length >= 0){
+            fetch(api.pizzas)
+                .then(response => response.json())
+                .then(data => setElem(data))
+        }
+    }, [])
     let count = 0;
     const elements = elem.map(item => {
         count++;
         if (count > 8) return;
-        return <Element
+        return <MenuElements
             id={item.id}
             key={item.id}
             img={item.img}
@@ -65,27 +34,30 @@ const Menu = () => {
     return (
         <>
             <div>
-                <header className={style.header}>
-                    <h2 className={style.newsText}>Меню</h2>
-                    <button className={style.pizza} onClick={changeTab} id="pizzas">Пицца</button>
-                    <button className={style.textBurger} onClick={changeTab} id="burgers">Бургер</button>
-                    <button className={style.text} onClick={changeTab} id="sushis">Суши</button>
-                    <button className={style.text} onClick={changeTab} id="rolls">Роллы</button>
-                    <button className={style.text} onClick={changeTab} id="salads">Салаты</button>
-                    <button className={style.text} onClick={changeTab} id="desserts">Десерты</button>
-                    <button className={style.text} onClick={changeTab} id="beverages">Напитки</button>
+                <header className={s.header}>
+                    <h2 className={s.newsText}>Меню</h2>
+                    <button className={s.text} onClick={changeTab} id="pizzas">Пицца</button>
+                    <button className={s.text} onClick={changeTab} id="burgers">Бургер</button>
+                    <button className={s.text} onClick={changeTab} id="sushis">Суши</button>
+                    <button className={s.text} onClick={changeTab} id="rolls">Роллы</button>
+                    <button className={s.text} onClick={changeTab} id="salads">Салаты</button>
+                    <button className={s.text} onClick={changeTab} id="desserts">Десерты</button>
+                    <button className={s.text} onClick={changeTab} id="beverages">Напитки</button>
                 </header>
-                <div className={style.sortMove}>
-                    <div className={style.sort}>
+                <div className={s.sortMove}>
+                    <div className={s.sort}>
                         Сортировка по:
-                        <select className={style.sortSelect}>
+                        <select className={s.sortSelect}>
                             <option value="default">По умолчанию</option>
                         </select>
                     </div>
                 </div>
             </div>
-            <div className={style.pizzas}>
+            <div className={s.pizzas}>
                 {elements}
+            </div>
+            <div className={s.moveButtonMore}>
+                <button className={s.buttonMore}>Показать ещё</button>
             </div>
         </>
     );

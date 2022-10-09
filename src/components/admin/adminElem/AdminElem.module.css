@@ -1,13 +1,15 @@
 .elems {
     position: absolute;
     display: flex;
-    margin-top: 133px;
+    margin-top: 135px;
     margin-left: 300px;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .elem {
     height: 150px;
+    width: 1150px;
     gap: 30px;
     padding: 20px;
     display: flex;
@@ -25,7 +27,7 @@
 }
 
 .title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -58,4 +60,9 @@
 .moveElem {
     display: flex;
 
+}
+
+.desc {
+    font-size: 15px;
+    width: 250px;
 }

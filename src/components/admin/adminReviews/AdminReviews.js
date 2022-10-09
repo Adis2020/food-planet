@@ -6,7 +6,7 @@ import pen from "../../data/images/pen.svg";
 const AdminReviews = () => {
     let [reviews, setReviews] = useState([]);
     const getData = () => {
-        fetch(api.mainReviews)
+        fetch(api.reviews)
             .then(response => response.json())
             .then(data => setReviews(data))
     }

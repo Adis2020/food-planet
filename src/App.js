@@ -9,6 +9,7 @@ import AdminMain from './components/admin/adminMain/AdminMain';
 import AdminElem from './components/admin/adminElem/AdminElem';
 import NotFound from './components/notFound/NotFound';
 import AdminReviews from "./components/admin/adminReviews/AdminReviews";
+import UpdateProducts from "./components/updateProducts/UpdateProducts";
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/" element={<Main/>}/>
                 <Route path="/basket" element={<Basket/>}/>
                 <Route path="/checkout" element={<Checkout/>}/>
+                <Route path="/updateProducts/:catalog_name/:id" element={<UpdateProducts/>}/>
                 <Route path="/admin" element={<Admin/>}>
                     <Route path="main" element={<AdminMain/>}/>
                     <Route path="reviews" element={<AdminReviews/>}/>

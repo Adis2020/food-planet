@@ -9,7 +9,7 @@ const data = [
         id: 2,
         title: 'Бургер',
         count: 16,
-        href: '../elements'
+        href: '../burgers'
     },
     {
         id: 3,
@@ -27,19 +27,19 @@ const data = [
         id: 5,
         title: 'Салаты',
         count: 60,
-        href: '../salats'
+        href: '../salads'
     },
     {
         id: 6,
         title: 'Десерты',
         count: 60,
-        href: '../deserts'
+        href: '../desserts'
     },
     {
         id: 7,
         title: 'Напитки',
         count: 43,
-        href: '../drinks'
+        href: '../beverages'
     },
     {
         id: 8,

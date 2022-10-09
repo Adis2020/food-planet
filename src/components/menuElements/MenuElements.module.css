@@ -1,28 +1,19 @@
-.burgers {
+.elem {
     display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-top: 50px;
-    margin-left: 10%;
-    gap: 32px;
-    flex-wrap: wrap;
-}
+    margin-top: 94px;
 
-.burger {
-    width: 264px;
-    height: 348px;
-    margin-top: 30px;
-    display: flex;
     flex-direction: column;
     align-items: center;
 
-    background-color: #2B4241;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
 }
 
-.burger img{
-    width: 200px;
-    height: 142px;
+.elem img{
+    max-width: 200px;
+    max-height: 142px;
     margin-top: -45px;
 }
 
@@ -34,7 +25,7 @@
     font-weight: 700;
     font-size: 20px;
 
-    color: #FFFFFF;
+    color: #254F4C;
 }
 
 .desc {
@@ -46,7 +37,7 @@
     font-weight: 400;
     font-size: 14px;
 
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .price {
@@ -56,7 +47,7 @@
     font-weight: 700;
     font-size: 20px;
 
-    color: #FFFFFF;
+    color: #254F4C;
 }
 
 .clicker {
@@ -69,23 +60,22 @@
 
 .minus {
     margin-top: -8px;
-
+    cursor: pointer;
     font-size: 40px;
     color: #FF583E;
-    cursor: pointer;
 }
 
 .plus {
+    cursor: pointer;
     font-size: 40px;
     color: #FF583E;
-    cursor: pointer;
 }
 
 .number {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    color: #FFFFFF;
+    color: #254F4C;
 }
 
 .button {
@@ -102,7 +92,7 @@
     border: none;
 
     color: #FFFFFF;
-    background-color: #FF583E;
+    background-color: #254F4C;
     border-radius: 40px;
 }
 

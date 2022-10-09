@@ -37,8 +37,8 @@
 }
 
 .elem img{
-    height: 90px;
-    width: 120px;
+    max-height: 90px;
+    max-width: 120px;
 }
 
 .elem div {

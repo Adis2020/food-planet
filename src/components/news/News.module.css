@@ -11,6 +11,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 25px;
+    padding-right: 144px;
 
     color: #254F4C;
 }
@@ -157,4 +158,8 @@
 
 .button:hover {
     background-color: #ff371b;
+}
+
+.active {
+    color: #FF583E;
 }

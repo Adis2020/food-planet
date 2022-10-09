@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import productManager from "../../manager/product.manager";
-import style from "../news/News.module.css";
+import style from './NewElements.module.css';
 
-const Element = (props) => {
+const NewElements = (props) => {
     let [quality, setQuality] = useState(1);
     if (quality < 1) {
         setQuality(1);
@@ -25,7 +25,7 @@ const Element = (props) => {
         productManager.setProduct(JSON.stringify(data));
     }
     return (
-        <div className={style.burger}>
+        <div className={style.elem}>
             <img src={props.img}/>
             <div className={style.mainText}>{props.title}</div>
             <div className={style.desc}>{props.desc}</div>
@@ -40,4 +40,4 @@ const Element = (props) => {
     )
 }
 
-export default Element;
+export default NewElements;
