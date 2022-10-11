@@ -21,12 +21,12 @@ const Elem = () => {
         }
         fetch(url, options)
             .then(response => {
-                if (response.status === 200){
+                if (response.status === 200) {
                     getElement()
                 }
             })
     }
-    const getLink = (id) => '../../updateProducts/' + params.element_name + '/' + id;
+    const getLink = (id) => '../updateProducts/' + params.element_name + '/' + id;
     return elem.map(item => {
         return (
             <div className={s.elem} key={item.id} id={item.id}>
@@ -34,8 +34,13 @@ const Elem = () => {
                 <h3 className={s.title}>{item.title}</h3>
                 <h4 className={s.desc}>{item.desc}</h4>
                 <h4>Цена: {item.price}</h4>
-                <button className={s.buttonDelete} onClick={() => {deleteProduct(item.id)}}>Удалить</button>
-                <Link to={getLink(item.id)}><button className={s.buttonEdit}>Редактировать</button></Link>
+                <button className={s.buttonDelete} onClick={() => {
+                    deleteProduct(item.id)
+                }}>Удалить
+                </button>
+                <Link to={getLink(item.id)}>
+                    <button className={s.buttonEdit}>Редактировать</button>
+                </Link>
             </div>
         )
     })
@@ -43,9 +48,14 @@ const Elem = () => {
 
 const AdminElem = () => {
     return (
-        <div className={s.elems}>
-            <Elem/>
-        </div>
+        <>
+            <div className={s.add}>
+                <Link to="../addProducts"><button>Добавить</button></Link>
+            </div>
+            <div className={s.elems}>
+                <Elem/>
+            </div>
+        </>
     );
 };
 

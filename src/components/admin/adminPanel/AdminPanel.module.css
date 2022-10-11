@@ -62,7 +62,7 @@
 .panel {
     padding-top: 25px;
     padding-right: 15px;
-    height: 100vh;
+    max-height: 100%;
     width: 255px;
     background: #363740;
 }

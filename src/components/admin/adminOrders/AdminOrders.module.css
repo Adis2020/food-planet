@@ -8,7 +8,7 @@
 .pen {
     position: absolute;
     margin-top: -280px;
-    margin-left: -225px;
+    margin-left: -230px;
 }
 
 .title {
@@ -19,12 +19,14 @@
     color: #254F4C;
 }
 
-.reviews {
+.container {
+    position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    gap: 32px;
+    gap: 20px;
     flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 320px;
 }
 
 .data {
@@ -64,4 +66,19 @@
     font-weight: 300;
     font-size: 14px;
     color: #3B7976;
+}
+
+.order {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.containerOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }

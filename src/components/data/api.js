@@ -8,6 +8,7 @@ const api = {
     desserts: 'http://localhost:3001/desserts',
     beverages: 'http://localhost:3001/beverages',
     productTabs: 'http://localhost:3001/productTabs',
+    orders: 'http://localhost:3001/orders',
     salads: 'http://localhost:3001/salads'
 }
 

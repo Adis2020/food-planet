@@ -66,3 +66,18 @@
     font-size: 15px;
     width: 250px;
 }
+
+.add {
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 300px;
+}
+
+.add button {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+}

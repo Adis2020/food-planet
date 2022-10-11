@@ -97,8 +97,6 @@
 }
 
 .moveHeader {
-    flex: 0 0 auto;
-    flex-direction: row;
     display: flex;
-    align-items: flex-end;
+    align-items: end;
 }

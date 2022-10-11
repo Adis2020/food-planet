@@ -16,53 +16,26 @@
 .elements {
     margin-top: 20px;
     display: flex;
-    font-family: sans-serif;
-    justify-content: center;
-    gap: 70px;
-}
-
-.elements {
-    margin-top: 20px;
-    display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    justify-content: center;
-}
-
-.elem {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 70px;
+    justify-content: center;
 }
 
-.elem img{
-    max-height: 90px;
-    max-width: 120px;
+.element {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.elem div {
-    width: 80px;
-
-}
-
-.elem input {
-    width: 80px;
-    text-align: center;
-}
-
-.input {
-    width: 70px;
-    height: 30px;
-}
-
-.input::placeholder {
-    text-align: center;
+.titleProducts {
+    display: flex;
+    gap: 150px;
 }
 
 .button {
-    width: 200px;
-    height: 70px;
+    width: 400px;
+    height: 50px;
     border-radius: 8px;
     background-color: #6495ED;
     font-weight: 600;
@@ -77,5 +50,47 @@
 
 .buttonMove {
     display: flex;
+    justify-content: center;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.elem img {
+    max-height: 90px;
+    max-width: 120px;
+}
+
+.elem div {
+    width: 100px;
+
+}
+
+.elem input {
+    width: 80px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.moveOutCome {
+    display: flex;
+    justify-content: center;
+    margin-left: 280px;
+}
+
+.outCome {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.notHave {
+    display: flex;
+    height: 160px;
     justify-content: center;
 }

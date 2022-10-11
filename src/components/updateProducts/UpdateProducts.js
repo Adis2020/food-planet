@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import s from './Update.module.css';
+import s from './UpdateProducts.module.css';
 import api from "../data/api";
 import {useParams} from "react-router-dom";
 

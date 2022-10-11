@@ -99,8 +99,8 @@
 }
 
 .elem img{
-    height: 90px;
-    width: 120px;
+    max-height: 90px;
+    max-width: 120px;
 }
 
 .elem div {
@@ -115,10 +115,10 @@
 
 .pay {
     display: flex;
-    width: 1100px;
     flex-wrap: wrap;
     margin-top: 20px;
-    gap: 7px;
+    gap: 10px;
+    font-size: 14px;
 }
 
 .pay label {
@@ -126,8 +126,77 @@
     align-items: center;
     padding-left: 20px;
     border-radius: 4px;
-    width: 400px;
-    flex-wrap: wrap;
-    height: 40px;
+    width: 285px;
+    height: 45px;
     border: 1px solid #adacac;
+}
+
+.pay textarea {
+    width: 1162px;
+    height: 32px;
+    padding: 20px;
+}
+
+.movePay {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    width: 1070px;
+}
+
+.outcome {
+    position: absolute;
+    margin-left: 1150px;
+    margin-top: -1135px;
+    width: 272px;
+    height: 400px;
+    background: #EBF1FA;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.outcome input {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 232px;
+    height: 35px;
+    color: gray;
+    border-radius: 5px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sum {
+   font-size: 13px;
+    color: gray;
+}
+
+.total {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 22px;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: #5E8BCE;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 242px;
+    font-size: 17px;
+    height: 40px;
+}
+
+.moveButton {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }

@@ -16,7 +16,7 @@ const data = [
         id: 2,
         img: orders,
         text: 'Заказы',
-        href: 'main'
+        href: 'orders'
     },
     {
         id: 3,
