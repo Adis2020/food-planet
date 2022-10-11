@@ -61,14 +61,14 @@ const Basket = () => {
     useEffect(() => {
         if (localStorage.cart) {
             const priceArray = data.map(item => {
-                return parseInt(item.price.replace(/\D+/g, ""));
+                return parseInt(item.price.replace(/\D+/g, "")); //Берём цифры
             })
             const price = priceArray.reduce((previousValue, currentValue) => {
                 return previousValue + currentValue;
             })
             setPrice(price);
         }
-    })
+    }, [price])
     const elem = getElem();
     const setElem = () => {
         let result = JSON.stringify(data)

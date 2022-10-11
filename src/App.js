@@ -12,7 +12,6 @@ import AdminReviews from './components/admin/adminReviews/AdminReviews';
 import UpdateProducts from './components/updateProducts/UpdateProducts';
 import AddProducts from './components/addProducts/AddProducts';
 import AdminOrders from "./components/admin/adminOrders/AdminOrders";
-import AdminPanel from "./components/admin/adminPanel/AdminPanel";
 
 const App = () => {
     return (
@@ -21,7 +20,6 @@ const App = () => {
                     <Route path="/" element={<Main/>}/>
                     <Route path="/basket" element={<Basket/>}/>
                     <Route path="/checkout" element={<Checkout/>}/>
-                    <Route path="/panel" element={<AdminPanel/>}/>
                     <Route path="/admin" element={<Admin/>}>
                         <Route path="main" element={<AdminMain/>}/>
                         <Route path="reviews" element={<AdminReviews/>}/>
