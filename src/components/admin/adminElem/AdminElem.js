@@ -49,10 +49,10 @@ const Elem = () => {
 const AdminElem = () => {
     return (
         <>
-            <div className={s.add}>
-                <Link to="../addProducts"><button>Добавить</button></Link>
-            </div>
             <div className={s.elems}>
+                <div className={s.add}>
+                    <Link to="../addProducts"><button>Добавить</button></Link>
+                </div>
                 <Elem/>
             </div>
         </>

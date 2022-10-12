@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import s from './UpdateProducts.module.css';
 import api from "../data/api";
 import {useParams} from "react-router-dom";
+import {toast} from "react-hot-toast";
 
 const UpdateProducts = () => {
     const {catalog_name, id} = useParams();
@@ -13,7 +14,7 @@ const UpdateProducts = () => {
                 if (response.ok) {
                     return response.json();
                 }
-                alert('error')
+                toast.error('Ошибка');
             })
             .then(data => setProducts(data))
     }
@@ -38,9 +39,9 @@ const UpdateProducts = () => {
         fetch(url, options)
             .then(response => {
                 if (response.ok){
-                    alert('great');
+                    toast.success('Успех!');
                 } else {
-                    alert('error');
+                    toast.error('Ошибка');
                 }
             })
     }

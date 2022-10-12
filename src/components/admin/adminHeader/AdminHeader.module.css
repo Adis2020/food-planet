@@ -7,8 +7,8 @@
 .header {
     display: flex;
     height: 44px;
-    margin-left: 15px;
     margin-top: 16px;
+    padding-bottom: 55px;
 }
 
 .img {

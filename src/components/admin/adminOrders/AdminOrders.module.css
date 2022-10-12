@@ -20,13 +20,10 @@
 }
 
 .container {
-    position: absolute;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 100px;
-    margin-left: 320px;
 }
 
 .data {

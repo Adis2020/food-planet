@@ -1,14 +1,7 @@
-.header {
-    display: flex;
-    justify-content: center;
-    margin-left: -980px;
-    margin-top: 56px;
-}
-
 .pen {
     position: absolute;
-    margin-top: -280px;
-    margin-left: -230px;
+    margin-top: -140px;
+    margin-left: -113px;
 }
 
 .title {
@@ -20,13 +13,9 @@
 }
 
 .container {
-    position: absolute;
     display: flex;
+    gap: 10px;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-left: 320px;
 }
 
 .data {

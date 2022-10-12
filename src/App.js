@@ -12,6 +12,7 @@ import AdminReviews from './components/admin/adminReviews/AdminReviews';
 import UpdateProducts from './components/updateProducts/UpdateProducts';
 import AddProducts from './components/addProducts/AddProducts';
 import AdminOrders from "./components/admin/adminOrders/AdminOrders";
+import {Toaster} from 'react-hot-toast';
 
 const App = () => {
     return (
@@ -30,6 +31,7 @@ const App = () => {
                     </Route>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
+            <Toaster/>
         </BrowserRouter>
     );
 };

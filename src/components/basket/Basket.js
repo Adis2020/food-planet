@@ -77,7 +77,7 @@ const Basket = () => {
     return (
         <>
             <Header/>
-            <div className={s.container}>
+            <div>
                 <h1 className={s.title}>Корзина</h1>
                 <table className={s.elements}>
                     <tbody className={s.element}>

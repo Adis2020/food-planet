@@ -18,7 +18,7 @@ const Header = () => {
             })
             setLenght(count);
         }
-    })
+    }, [localStorage.cart])
     return (
         <header className={style.header}>
             <div className={style.logo}>

@@ -6,7 +6,7 @@
     align-items: center;
     width: 258px;
     height: 134px;
-    background: #FFFFFF;
+    background-color: #f2f2f2;
     border: 1px solid #DFE0EB;
     border-radius: 8px;
 }
@@ -22,10 +22,8 @@
 }
 
 .boxes {
-    margin-top: 124px;
-    position: absolute;
-    margin-left: 285px;
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }

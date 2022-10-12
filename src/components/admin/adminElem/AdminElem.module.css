@@ -1,8 +1,5 @@
 .elems {
-    position: absolute;
     display: flex;
-    margin-top: 135px;
-    margin-left: 300px;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -65,12 +62,6 @@
 .desc {
     font-size: 15px;
     width: 250px;
-}
-
-.add {
-    position: absolute;
-    margin-top: 65px;
-    margin-left: 300px;
 }
 
 .add button {

@@ -1,0 +1,12 @@
+.mainAdmin {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    padding-left: 270px;
+    margin-left: 15px;
+    width: 100%;
+}

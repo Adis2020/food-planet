@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './AddProducts.module.css';
 import api from '../data/api';
+import {toast} from "react-hot-toast";
 
 const AddProducts = () => {
     const saveData = (e) => {
@@ -22,9 +23,9 @@ const AddProducts = () => {
         fetch(api[catalog], options)
             .then(response => {
                 if (response.status === 201){
-                    alert('great')
+                   toast.success('Продукт лобавлен')
                 } else {
-                    alert('error')
+                    toast.error('Ошибка')
                 }
             })
     }
