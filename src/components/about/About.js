@@ -23,10 +23,10 @@ const About = () => {
     })
     return (
         <>
-            <header className={style.header}>
+            <div className={style.header}>
                 <h2 className={style.title}>Почему выбирают нас:</h2>
-            </header>
-            <div className={style.aboutData}>
+            </div>
+            <div className={style.abouts}>
                 {aboutElem}
             </div>
         </>

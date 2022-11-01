@@ -1,7 +1,7 @@
 import React from 'react';
-import style from "./Banner.module.css";
-import arrow from ".././data/images/arrow.svg";
-import burger from ".././data/images/burger.png";
+import style from './Banner.module.css';
+import arrow from '.././data/images/arrow.svg';
+import burger from '.././data/images/burger.png';
 
 const Banner = () => {
     return (

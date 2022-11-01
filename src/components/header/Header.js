@@ -6,7 +6,7 @@ import phone from "../data/images/phone.svg";
 import basket from "../data/images/basket.svg";
 
 const Header = () => {
-    const [lenght, setLenght] = useState(0);
+    const [countBasket, setCountBasket] = useState(0);
     useEffect(() => {
         if (localStorage.cart) {
             const data = JSON.parse(localStorage.cart);
@@ -16,9 +16,9 @@ const Header = () => {
             const count = countArray.reduce((previousValue, currentValue) => {
                 return previousValue + currentValue;
             })
-            setLenght(count);
+            setCountBasket(count);
         }
-    }, [localStorage.cart])
+    })
     return (
         <header className={style.header}>
             <div className={style.logo}>
@@ -40,7 +40,7 @@ const Header = () => {
             </div>
             <NavLink to="/basket" className={style.basket}>
                 <img src={basket} alt="phone"/>
-                {lenght}
+                {countBasket}
             </NavLink>
         </header>
     );
